@@ -1,0 +1,590 @@
+/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/agent_evaluator.py:153: UserWarning: [EXPERIMENTAL] UserSimulatorProvider: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  user_simulator_provider = UserSimulatorProvider(
+/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/metric_evaluator_registry.py:90: UserWarning: [EXPERIMENTAL] MetricEvaluatorRegistry: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  metric_evaluator_registry = MetricEvaluatorRegistry()
+/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py:80: UserWarning: [EXPERIMENTAL] UserSimulatorProvider: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  user_simulator_provider: UserSimulatorProvider = UserSimulatorProvider(),
+/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/agent_evaluator.py:557: UserWarning: [EXPERIMENTAL] LocalEvalService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  eval_service = LocalEvalService(
+/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/user_simulator_provider.py:77: UserWarning: [EXPERIMENTAL] StaticUserSimulator: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  return StaticUserSimulator(static_conversation=eval_case.conversation)
+/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/static_user_simulator.py:39: UserWarning: [EXPERIMENTAL] UserSimulator: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__(
+App name mismatch detected. The runner is configured with app name "EvaluationGenerator", but the root agent was loaded from "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/agents", which implies app name "agents".
+App name mismatch detected. The runner is configured with app name "EvaluationGenerator", but the root agent was loaded from "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/agents", which implies app name "agents".
+/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/user_simulator_provider.py:77: UserWarning: [EXPERIMENTAL] StaticUserSimulator: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  return StaticUserSimulator(static_conversation=eval_case.conversation)
+/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/static_user_simulator.py:39: UserWarning: [EXPERIMENTAL] UserSimulator: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__(
+App name mismatch detected. The runner is configured with app name "EvaluationGenerator", but the root agent was loaded from "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/agents", which implies app name "agents".
+App name mismatch detected. The runner is configured with app name "EvaluationGenerator", but the root agent was loaded from "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/agents", which implies app name "agents".
+/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/metric_evaluator_registry.py:56: UserWarning: [EXPERIMENTAL] RubricBasedFinalResponseQualityV1Evaluator: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  return self._registry[eval_metric.metric_name][0](eval_metric=eval_metric)
+/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/rubric_based_final_response_quality_v1.py:261: UserWarning: [EXPERIMENTAL] RubricBasedEvaluator: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__(
+/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/rubric_based_evaluator.py:319: UserWarning: [EXPERIMENTAL] LlmAsJudge: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__(
+/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/metric_evaluator_registry.py:56: UserWarning: [EXPERIMENTAL] RubricBasedFinalResponseQualityV1Evaluator: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  return self._registry[eval_metric.metric_name][0](eval_metric=eval_metric)
+/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/rubric_based_final_response_quality_v1.py:261: UserWarning: [EXPERIMENTAL] RubricBasedEvaluator: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__(
+/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/rubric_based_evaluator.py:319: UserWarning: [EXPERIMENTAL] LlmAsJudge: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__(
+/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/metric_evaluator_registry.py:56: UserWarning: [EXPERIMENTAL] RubricBasedFinalResponseQualityV1Evaluator: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  return self._registry[eval_metric.metric_name][0](eval_metric=eval_metric)
+/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/rubric_based_final_response_quality_v1.py:261: UserWarning: [EXPERIMENTAL] RubricBasedEvaluator: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__(
+/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/rubric_based_evaluator.py:319: UserWarning: [EXPERIMENTAL] LlmAsJudge: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__(
+Error loading metric COHERENCE (requested version: v1) from GCS: 403 GET https://storage.googleapis.com/download/storage/v1/b/vertex-ai-generative-ai-eval-sdk-resources/o/metrics%2Fcoherence%2Fv1.yaml?alt=media: The billing account for the owning project is disabled in state absent: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>, <HTTPStatus.PARTIAL_CONTENT: 206>)
+Failed to resolve RubricMetric COHERENCE@v1: Metric 'COHERENCE' could not be resolved as an API Predefined Metric or loaded from GCS.
+Metric evaluation failed for metric `response_evaluation_score` for eval case id 'roi_cotton' with following error `Metric 'COHERENCE' could not be resolved as an API Predefined Metric or loaded from GCS.`
+Traceback (most recent call last):
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/blob.py", line 4659, in _prep_and_do_download
+    self._do_download(
+    ~~~~~~~~~~~~~~~~~^
+        transport,
+        ^^^^^^^^^^
+    ...<9 lines>...
+        single_shot_download=single_shot_download,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/blob.py", line 1094, in _do_download
+    response = download.consume(transport, timeout=timeout)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/_media/requests/download.py", line 280, in consume
+    return _request_helpers.wait_and_retry(retriable_request, self._retry_strategy)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/_media/requests/_request_helpers.py", line 107, in wait_and_retry
+    return func()
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+        target,
+    ...<3 lines>...
+        on_error=on_error,
+    )
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+        exc,
+    ...<6 lines>...
+        timeout,
+    )
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/_media/requests/download.py", line 262, in retriable_request
+    self._process_response(result)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/_media/_download.py", line 232, in _process_response
+    _helpers.require_status_code(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        response, _ACCEPTABLE_STATUS_CODES, self._get_status_code
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/_media/_helpers.py", line 105, in require_status_code
+    raise InvalidResponse(
+    ...<5 lines>...
+    )
+google.cloud.storage.exceptions.InvalidResponse: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>, <HTTPStatus.PARTIAL_CONTENT: 206>)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/vertexai/_genai/_evals_metric_loaders.py", line 233, in resolve
+    gcs_metric = self._fetch_and_parse(api_client)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/vertexai/_genai/_evals_metric_loaders.py", line 185, in _fetch_and_parse
+    content_str = gcs_utils.read_file_contents(uri)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/vertexai/_genai/_gcs_utils.py", line 175, in read_file_contents
+    content = blob.download_as_bytes().decode("utf-8")
+              ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/blob.py", line 1530, in download_as_bytes
+    self._prep_and_do_download(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        string_buffer,
+        ^^^^^^^^^^^^^^
+    ...<13 lines>...
+        single_shot_download=single_shot_download,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/blob.py", line 4673, in _prep_and_do_download
+    _raise_from_invalid_response(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/blob.py", line 5145, in _raise_from_invalid_response
+    raise exceptions.from_http_status(response.status_code, message, response=response)
+google.api_core.exceptions.Forbidden: 403 GET https://storage.googleapis.com/download/storage/v1/b/vertex-ai-generative-ai-eval-sdk-resources/o/metrics%2Fcoherence%2Fv1.yaml?alt=media: The billing account for the owning project is disabled in state absent: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>, <HTTPStatus.PARTIAL_CONTENT: 206>)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py", line 252, in _evaluate_single_inference_result
+    evaluation_result = await self._evaluate_metric(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py", line 363, in _evaluate_metric
+    return metric_evaluator.evaluate_invocations(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        actual_invocations=actual_invocations,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        expected_invocations=expected_invocations,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/response_evaluator.py", line 117, in evaluate_invocations
+    ).evaluate_invocations(actual_invocations, expected_invocations)
+      ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/vertex_ai_eval_facade.py", line 97, in evaluate_invocations
+    eval_case_result = _VertexAiEvalFacade._perform_eval(
+        dataset=pd.DataFrame([eval_case]), metrics=[self._metric_name]
+    )
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/vertex_ai_eval_facade.py", line 170, in _perform_eval
+    return client.evals.evaluate(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        dataset=vertexai_types.EvaluationDataset(eval_dataset_df=dataset),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        metrics=metrics,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/vertexai/_genai/evals.py", line 1026, in evaluate
+    return _evals_common._execute_evaluation(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        api_client=self._api_client,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/vertexai/_genai/_evals_common.py", line 1128, in _execute_evaluation
+    resolved_metrics = _resolve_metrics(metrics, api_client)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/vertexai/_genai/_evals_common.py", line 1016, in _resolve_metrics
+    metric_instance.resolve(api_client=api_client)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/vertexai/_genai/_evals_metric_loaders.py", line 245, in resolve
+    raise ValueError(
+    ...<2 lines>...
+    ) from e
+ValueError: Metric 'COHERENCE' could not be resolved as an API Predefined Metric or loaded from GCS.
+Error loading metric COHERENCE (requested version: v1) from GCS: 403 GET https://storage.googleapis.com/download/storage/v1/b/vertex-ai-generative-ai-eval-sdk-resources/o/metrics%2Fcoherence%2Fv1.yaml?alt=media: The billing account for the owning project is disabled in state absent: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>, <HTTPStatus.PARTIAL_CONTENT: 206>)
+Failed to resolve RubricMetric COHERENCE@v1: Metric 'COHERENCE' could not be resolved as an API Predefined Metric or loaded from GCS.
+Metric evaluation failed for metric `response_evaluation_score` for eval case id 'roi_cotton' with following error `Metric 'COHERENCE' could not be resolved as an API Predefined Metric or loaded from GCS.`
+Traceback (most recent call last):
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/blob.py", line 4659, in _prep_and_do_download
+    self._do_download(
+    ~~~~~~~~~~~~~~~~~^
+        transport,
+        ^^^^^^^^^^
+    ...<9 lines>...
+        single_shot_download=single_shot_download,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/blob.py", line 1094, in _do_download
+    response = download.consume(transport, timeout=timeout)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/_media/requests/download.py", line 280, in consume
+    return _request_helpers.wait_and_retry(retriable_request, self._retry_strategy)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/_media/requests/_request_helpers.py", line 107, in wait_and_retry
+    return func()
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+        target,
+    ...<3 lines>...
+        on_error=on_error,
+    )
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+        exc,
+    ...<6 lines>...
+        timeout,
+    )
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/_media/requests/download.py", line 262, in retriable_request
+    self._process_response(result)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/_media/_download.py", line 232, in _process_response
+    _helpers.require_status_code(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        response, _ACCEPTABLE_STATUS_CODES, self._get_status_code
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/_media/_helpers.py", line 105, in require_status_code
+    raise InvalidResponse(
+    ...<5 lines>...
+    )
+google.cloud.storage.exceptions.InvalidResponse: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>, <HTTPStatus.PARTIAL_CONTENT: 206>)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/vertexai/_genai/_evals_metric_loaders.py", line 233, in resolve
+    gcs_metric = self._fetch_and_parse(api_client)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/vertexai/_genai/_evals_metric_loaders.py", line 185, in _fetch_and_parse
+    content_str = gcs_utils.read_file_contents(uri)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/vertexai/_genai/_gcs_utils.py", line 175, in read_file_contents
+    content = blob.download_as_bytes().decode("utf-8")
+              ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/blob.py", line 1530, in download_as_bytes
+    self._prep_and_do_download(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        string_buffer,
+        ^^^^^^^^^^^^^^
+    ...<13 lines>...
+        single_shot_download=single_shot_download,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/blob.py", line 4673, in _prep_and_do_download
+    _raise_from_invalid_response(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/blob.py", line 5145, in _raise_from_invalid_response
+    raise exceptions.from_http_status(response.status_code, message, response=response)
+google.api_core.exceptions.Forbidden: 403 GET https://storage.googleapis.com/download/storage/v1/b/vertex-ai-generative-ai-eval-sdk-resources/o/metrics%2Fcoherence%2Fv1.yaml?alt=media: The billing account for the owning project is disabled in state absent: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>, <HTTPStatus.PARTIAL_CONTENT: 206>)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py", line 252, in _evaluate_single_inference_result
+    evaluation_result = await self._evaluate_metric(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py", line 363, in _evaluate_metric
+    return metric_evaluator.evaluate_invocations(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        actual_invocations=actual_invocations,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        expected_invocations=expected_invocations,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/response_evaluator.py", line 117, in evaluate_invocations
+    ).evaluate_invocations(actual_invocations, expected_invocations)
+      ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/vertex_ai_eval_facade.py", line 97, in evaluate_invocations
+    eval_case_result = _VertexAiEvalFacade._perform_eval(
+        dataset=pd.DataFrame([eval_case]), metrics=[self._metric_name]
+    )
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/vertex_ai_eval_facade.py", line 170, in _perform_eval
+    return client.evals.evaluate(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        dataset=vertexai_types.EvaluationDataset(eval_dataset_df=dataset),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        metrics=metrics,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/vertexai/_genai/evals.py", line 1026, in evaluate
+    return _evals_common._execute_evaluation(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        api_client=self._api_client,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/vertexai/_genai/_evals_common.py", line 1128, in _execute_evaluation
+    resolved_metrics = _resolve_metrics(metrics, api_client)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/vertexai/_genai/_evals_common.py", line 1016, in _resolve_metrics
+    metric_instance.resolve(api_client=api_client)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/vertexai/_genai/_evals_metric_loaders.py", line 245, in resolve
+    raise ValueError(
+    ...<2 lines>...
+    ) from e
+ValueError: Metric 'COHERENCE' could not be resolved as an API Predefined Metric or loaded from GCS.
+Error loading metric COHERENCE (requested version: v1) from GCS: 403 GET https://storage.googleapis.com/download/storage/v1/b/vertex-ai-generative-ai-eval-sdk-resources/o/metrics%2Fcoherence%2Fv1.yaml?alt=media: The billing account for the owning project is disabled in state absent: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>, <HTTPStatus.PARTIAL_CONTENT: 206>)
+Failed to resolve RubricMetric COHERENCE@v1: Metric 'COHERENCE' could not be resolved as an API Predefined Metric or loaded from GCS.
+Metric evaluation failed for metric `response_evaluation_score` for eval case id 'profit_wheat' with following error `Metric 'COHERENCE' could not be resolved as an API Predefined Metric or loaded from GCS.`
+Traceback (most recent call last):
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/blob.py", line 4659, in _prep_and_do_download
+    self._do_download(
+    ~~~~~~~~~~~~~~~~~^
+        transport,
+        ^^^^^^^^^^
+    ...<9 lines>...
+        single_shot_download=single_shot_download,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/blob.py", line 1094, in _do_download
+    response = download.consume(transport, timeout=timeout)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/_media/requests/download.py", line 280, in consume
+    return _request_helpers.wait_and_retry(retriable_request, self._retry_strategy)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/_media/requests/_request_helpers.py", line 107, in wait_and_retry
+    return func()
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+        target,
+    ...<3 lines>...
+        on_error=on_error,
+    )
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+        exc,
+    ...<6 lines>...
+        timeout,
+    )
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/_media/requests/download.py", line 262, in retriable_request
+    self._process_response(result)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/_media/_download.py", line 232, in _process_response
+    _helpers.require_status_code(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        response, _ACCEPTABLE_STATUS_CODES, self._get_status_code
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/_media/_helpers.py", line 105, in require_status_code
+    raise InvalidResponse(
+    ...<5 lines>...
+    )
+google.cloud.storage.exceptions.InvalidResponse: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>, <HTTPStatus.PARTIAL_CONTENT: 206>)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/vertexai/_genai/_evals_metric_loaders.py", line 233, in resolve
+    gcs_metric = self._fetch_and_parse(api_client)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/vertexai/_genai/_evals_metric_loaders.py", line 185, in _fetch_and_parse
+    content_str = gcs_utils.read_file_contents(uri)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/vertexai/_genai/_gcs_utils.py", line 175, in read_file_contents
+    content = blob.download_as_bytes().decode("utf-8")
+              ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/blob.py", line 1530, in download_as_bytes
+    self._prep_and_do_download(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        string_buffer,
+        ^^^^^^^^^^^^^^
+    ...<13 lines>...
+        single_shot_download=single_shot_download,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/blob.py", line 4673, in _prep_and_do_download
+    _raise_from_invalid_response(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/blob.py", line 5145, in _raise_from_invalid_response
+    raise exceptions.from_http_status(response.status_code, message, response=response)
+google.api_core.exceptions.Forbidden: 403 GET https://storage.googleapis.com/download/storage/v1/b/vertex-ai-generative-ai-eval-sdk-resources/o/metrics%2Fcoherence%2Fv1.yaml?alt=media: The billing account for the owning project is disabled in state absent: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>, <HTTPStatus.PARTIAL_CONTENT: 206>)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py", line 252, in _evaluate_single_inference_result
+    evaluation_result = await self._evaluate_metric(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py", line 363, in _evaluate_metric
+    return metric_evaluator.evaluate_invocations(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        actual_invocations=actual_invocations,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        expected_invocations=expected_invocations,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/response_evaluator.py", line 117, in evaluate_invocations
+    ).evaluate_invocations(actual_invocations, expected_invocations)
+      ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/vertex_ai_eval_facade.py", line 97, in evaluate_invocations
+    eval_case_result = _VertexAiEvalFacade._perform_eval(
+        dataset=pd.DataFrame([eval_case]), metrics=[self._metric_name]
+    )
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/vertex_ai_eval_facade.py", line 170, in _perform_eval
+    return client.evals.evaluate(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        dataset=vertexai_types.EvaluationDataset(eval_dataset_df=dataset),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        metrics=metrics,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/vertexai/_genai/evals.py", line 1026, in evaluate
+    return _evals_common._execute_evaluation(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        api_client=self._api_client,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/vertexai/_genai/_evals_common.py", line 1128, in _execute_evaluation
+    resolved_metrics = _resolve_metrics(metrics, api_client)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/vertexai/_genai/_evals_common.py", line 1016, in _resolve_metrics
+    metric_instance.resolve(api_client=api_client)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/vertexai/_genai/_evals_metric_loaders.py", line 245, in resolve
+    raise ValueError(
+    ...<2 lines>...
+    ) from e
+ValueError: Metric 'COHERENCE' could not be resolved as an API Predefined Metric or loaded from GCS.
+Error loading metric COHERENCE (requested version: v1) from GCS: 403 GET https://storage.googleapis.com/download/storage/v1/b/vertex-ai-generative-ai-eval-sdk-resources/o/metrics%2Fcoherence%2Fv1.yaml?alt=media: The billing account for the owning project is disabled in state absent: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>, <HTTPStatus.PARTIAL_CONTENT: 206>)
+Failed to resolve RubricMetric COHERENCE@v1: Metric 'COHERENCE' could not be resolved as an API Predefined Metric or loaded from GCS.
+Metric evaluation failed for metric `response_evaluation_score` for eval case id 'profit_wheat' with following error `Metric 'COHERENCE' could not be resolved as an API Predefined Metric or loaded from GCS.`
+Traceback (most recent call last):
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/blob.py", line 4659, in _prep_and_do_download
+    self._do_download(
+    ~~~~~~~~~~~~~~~~~^
+        transport,
+        ^^^^^^^^^^
+    ...<9 lines>...
+        single_shot_download=single_shot_download,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/blob.py", line 1094, in _do_download
+    response = download.consume(transport, timeout=timeout)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/_media/requests/download.py", line 280, in consume
+    return _request_helpers.wait_and_retry(retriable_request, self._retry_strategy)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/_media/requests/_request_helpers.py", line 107, in wait_and_retry
+    return func()
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+        target,
+    ...<3 lines>...
+        on_error=on_error,
+    )
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+        exc,
+    ...<6 lines>...
+        timeout,
+    )
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/_media/requests/download.py", line 262, in retriable_request
+    self._process_response(result)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/_media/_download.py", line 232, in _process_response
+    _helpers.require_status_code(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        response, _ACCEPTABLE_STATUS_CODES, self._get_status_code
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/_media/_helpers.py", line 105, in require_status_code
+    raise InvalidResponse(
+    ...<5 lines>...
+    )
+google.cloud.storage.exceptions.InvalidResponse: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>, <HTTPStatus.PARTIAL_CONTENT: 206>)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/vertexai/_genai/_evals_metric_loaders.py", line 233, in resolve
+    gcs_metric = self._fetch_and_parse(api_client)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/vertexai/_genai/_evals_metric_loaders.py", line 185, in _fetch_and_parse
+    content_str = gcs_utils.read_file_contents(uri)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/vertexai/_genai/_gcs_utils.py", line 175, in read_file_contents
+    content = blob.download_as_bytes().decode("utf-8")
+              ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/blob.py", line 1530, in download_as_bytes
+    self._prep_and_do_download(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        string_buffer,
+        ^^^^^^^^^^^^^^
+    ...<13 lines>...
+        single_shot_download=single_shot_download,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/blob.py", line 4673, in _prep_and_do_download
+    _raise_from_invalid_response(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/cloud/storage/blob.py", line 5145, in _raise_from_invalid_response
+    raise exceptions.from_http_status(response.status_code, message, response=response)
+google.api_core.exceptions.Forbidden: 403 GET https://storage.googleapis.com/download/storage/v1/b/vertex-ai-generative-ai-eval-sdk-resources/o/metrics%2Fcoherence%2Fv1.yaml?alt=media: The billing account for the owning project is disabled in state absent: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>, <HTTPStatus.PARTIAL_CONTENT: 206>)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py", line 252, in _evaluate_single_inference_result
+    evaluation_result = await self._evaluate_metric(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py", line 363, in _evaluate_metric
+    return metric_evaluator.evaluate_invocations(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        actual_invocations=actual_invocations,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        expected_invocations=expected_invocations,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/response_evaluator.py", line 117, in evaluate_invocations
+    ).evaluate_invocations(actual_invocations, expected_invocations)
+      ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/vertex_ai_eval_facade.py", line 97, in evaluate_invocations
+    eval_case_result = _VertexAiEvalFacade._perform_eval(
+        dataset=pd.DataFrame([eval_case]), metrics=[self._metric_name]
+    )
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/vertex_ai_eval_facade.py", line 170, in _perform_eval
+    return client.evals.evaluate(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        dataset=vertexai_types.EvaluationDataset(eval_dataset_df=dataset),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        metrics=metrics,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/vertexai/_genai/evals.py", line 1026, in evaluate
+    return _evals_common._execute_evaluation(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        api_client=self._api_client,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/vertexai/_genai/_evals_common.py", line 1128, in _execute_evaluation
+    resolved_metrics = _resolve_metrics(metrics, api_client)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/vertexai/_genai/_evals_common.py", line 1016, in _resolve_metrics
+    metric_instance.resolve(api_client=api_client)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/vertexai/_genai/_evals_metric_loaders.py", line 245, in resolve
+    raise ValueError(
+    ...<2 lines>...
+    ) from e
+ValueError: Metric 'COHERENCE' could not be resolved as an API Predefined Metric or loaded from GCS.
+Traceback (most recent call last):
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/evals/run_evals.py", line 63, in run_suite
+    await AgentEvaluator.evaluate_eval_set(
+    ...<5 lines>...
+    )
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/agent_evaluator.py", line 193, in evaluate_eval_set
+    assert not failures, failure_message
+           ^^^^^^^^^^^^
+AssertionError: Following are all the test failures. If you looking to get more details on the failures, then please re-run this test with `print_detailed_results` set to `True`.
+response_evaluation_score for market_analyst_a2a Failed. Expected 0.7, but got None.
+response_evaluation_score for market_analyst_a2a Failed. Expected 0.7, but got None.
+Running suite: market
+Starting evaluation for market_analyst_a2a...
+Evaluation failed: Following are all the test failures. If you looking to get more details on the failures, then please re-run this test with `print_detailed_results` set to `True`.
+response_evaluation_score for market_analyst_a2a Failed. Expected 0.7, but got None.
+response_evaluation_score for market_analyst_a2a Failed. Expected 0.7, but got None.

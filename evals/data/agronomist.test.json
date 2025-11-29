@@ -1,0 +1,36 @@
+{
+    "eval_set_id": "agronomist_eval",
+    "name": "Agronomist Evaluation",
+    "eval_cases": [
+        {
+            "eval_id": "soil_cotton",
+            "conversation": [
+                {
+                    "user_content": {
+                        "role": "user",
+                        "parts": [
+                            {
+                                "text": "What kind of soil does cotton need?"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "eval_id": "season_wheat",
+            "conversation": [
+                {
+                    "user_content": {
+                        "role": "user",
+                        "parts": [
+                            {
+                                "text": "When is the best time to plant wheat?"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

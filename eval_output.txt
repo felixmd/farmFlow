@@ -1,0 +1,505 @@
+/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/agent_evaluator.py:153: UserWarning: [EXPERIMENTAL] UserSimulatorProvider: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  user_simulator_provider = UserSimulatorProvider(
+/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/metric_evaluator_registry.py:90: UserWarning: [EXPERIMENTAL] MetricEvaluatorRegistry: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  metric_evaluator_registry = MetricEvaluatorRegistry()
+/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py:80: UserWarning: [EXPERIMENTAL] UserSimulatorProvider: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  user_simulator_provider: UserSimulatorProvider = UserSimulatorProvider(),
+/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/agent_evaluator.py:557: UserWarning: [EXPERIMENTAL] LocalEvalService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  eval_service = LocalEvalService(
+/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/user_simulator_provider.py:77: UserWarning: [EXPERIMENTAL] StaticUserSimulator: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  return StaticUserSimulator(static_conversation=eval_case.conversation)
+/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/static_user_simulator.py:39: UserWarning: [EXPERIMENTAL] UserSimulator: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__(
+App name mismatch detected. The runner is configured with app name "EvaluationGenerator", but the root agent was loaded from "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/agents", which implies app name "agents".
+Inference failed for eval case `profit_wheat` with error Missing key inputs argument! To use the Google AI API, provide (`api_key`) arguments. To use the Google Cloud API, provide (`vertexai`, `project` & `location`) arguments..
+Traceback (most recent call last):
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py", line 407, in _perform_inference_single_eval_item
+    await EvaluationGenerator._generate_inferences_from_root_agent(
+    ...<7 lines>...
+    )
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/evaluation_generator.py", line 249, in _generate_inferences_from_root_agent
+    async for (
+    ...<4 lines>...
+      events.append(event)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/evaluation_generator.py", line 176, in _generate_inferences_for_single_user_invocation
+    async for event in agen:
+    ...<8 lines>...
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/runners.py", line 454, in run_async
+    async for event in agen:
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/runners.py", line 442, in _run_with_trace
+    async for event in agen:
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/runners.py", line 654, in _exec_with_plugin
+    async for event in agen:
+    ...<9 lines>...
+      yield (modified_event if modified_event else event)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/runners.py", line 431, in execute
+    async for event in agen:
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/agents/base_agent.py", line 291, in run_async
+    async for event in agen:
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/agents/llm_agent.py", line 460, in _run_async_impl
+    async for event in agen:
+    ...<5 lines>...
+        should_pause = True
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 346, in run_async
+    async for event in agen:
+      last_event = event
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 423, in _run_one_step_async
+    async for llm_response in agen:
+    ...<13 lines>...
+          yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 801, in _call_llm_async
+    async for event in agen:
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 785, in _call_llm_with_tracing
+    async for llm_response in agen:
+    ...<12 lines>...
+      yield llm_response
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 1038, in _run_and_handle_error
+    raise model_error
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 1024, in _run_and_handle_error
+    async for response in agen:
+      yield response
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 143, in generate_content_async
+    await self._preprocess_request(llm_request)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 354, in _preprocess_request
+    if self._api_backend == GoogleLLMVariant.GEMINI_API:
+       ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/functools.py", line 1039, in __get__
+    val = self.func(instance)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 257, in _api_backend
+    if self.api_client.vertexai
+       ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/functools.py", line 1039, in __get__
+    val = self.func(instance)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 246, in api_client
+    return Client(
+        http_options=types.HttpOptions(
+    ...<2 lines>...
+        )
+    )
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/client.py", line 271, in __init__
+    self._api_client = self._get_api_client(
+                       ~~~~~~~~~~~~~~~~~~~~^
+        vertexai=vertexai,
+        ^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        http_options=http_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/client.py", line 318, in _get_api_client
+    return BaseApiClient(
+        vertexai=vertexai,
+    ...<4 lines>...
+        http_options=http_options,
+    )
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/_api_client.py", line 683, in __init__
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: Missing key inputs argument! To use the Google AI API, provide (`api_key`) arguments. To use the Google Cloud API, provide (`vertexai`, `project` & `location`) arguments.
+App name mismatch detected. The runner is configured with app name "EvaluationGenerator", but the root agent was loaded from "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/agents", which implies app name "agents".
+Inference failed for eval case `roi_cotton` with error Missing key inputs argument! To use the Google AI API, provide (`api_key`) arguments. To use the Google Cloud API, provide (`vertexai`, `project` & `location`) arguments..
+Traceback (most recent call last):
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py", line 407, in _perform_inference_single_eval_item
+    await EvaluationGenerator._generate_inferences_from_root_agent(
+    ...<7 lines>...
+    )
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/evaluation_generator.py", line 249, in _generate_inferences_from_root_agent
+    async for (
+    ...<4 lines>...
+      events.append(event)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/evaluation_generator.py", line 176, in _generate_inferences_for_single_user_invocation
+    async for event in agen:
+    ...<8 lines>...
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/runners.py", line 454, in run_async
+    async for event in agen:
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/runners.py", line 442, in _run_with_trace
+    async for event in agen:
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/runners.py", line 654, in _exec_with_plugin
+    async for event in agen:
+    ...<9 lines>...
+      yield (modified_event if modified_event else event)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/runners.py", line 431, in execute
+    async for event in agen:
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/agents/base_agent.py", line 291, in run_async
+    async for event in agen:
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/agents/llm_agent.py", line 460, in _run_async_impl
+    async for event in agen:
+    ...<5 lines>...
+        should_pause = True
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 346, in run_async
+    async for event in agen:
+      last_event = event
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 423, in _run_one_step_async
+    async for llm_response in agen:
+    ...<13 lines>...
+          yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 801, in _call_llm_async
+    async for event in agen:
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 785, in _call_llm_with_tracing
+    async for llm_response in agen:
+    ...<12 lines>...
+      yield llm_response
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 1038, in _run_and_handle_error
+    raise model_error
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 1024, in _run_and_handle_error
+    async for response in agen:
+      yield response
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 143, in generate_content_async
+    await self._preprocess_request(llm_request)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 354, in _preprocess_request
+    if self._api_backend == GoogleLLMVariant.GEMINI_API:
+       ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/functools.py", line 1039, in __get__
+    val = self.func(instance)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 257, in _api_backend
+    if self.api_client.vertexai
+       ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/functools.py", line 1039, in __get__
+    val = self.func(instance)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 246, in api_client
+    return Client(
+        http_options=types.HttpOptions(
+    ...<2 lines>...
+        )
+    )
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/client.py", line 271, in __init__
+    self._api_client = self._get_api_client(
+                       ~~~~~~~~~~~~~~~~~~~~^
+        vertexai=vertexai,
+        ^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        http_options=http_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/client.py", line 318, in _get_api_client
+    return BaseApiClient(
+        vertexai=vertexai,
+    ...<4 lines>...
+        http_options=http_options,
+    )
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/_api_client.py", line 683, in __init__
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: Missing key inputs argument! To use the Google AI API, provide (`api_key`) arguments. To use the Google Cloud API, provide (`vertexai`, `project` & `location`) arguments.
+Task exception was never retrieved
+future: <Task finished name='Task-4' coro=<BaseApiClient.aclose() done, defined at /Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/_api_client.py:1902> exception=AttributeError("'BaseApiClient' object has no attribute '_async_httpx_client'")>
+Traceback (most recent call last):
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/_api_client.py", line 1907, in aclose
+    await self._async_httpx_client.aclose()
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'BaseApiClient' object has no attribute '_async_httpx_client'
+Task exception was never retrieved
+future: <Task finished name='Task-5' coro=<BaseApiClient.aclose() done, defined at /Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/_api_client.py:1902> exception=AttributeError("'BaseApiClient' object has no attribute '_async_httpx_client'")>
+Traceback (most recent call last):
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/_api_client.py", line 1907, in aclose
+    await self._async_httpx_client.aclose()
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'BaseApiClient' object has no attribute '_async_httpx_client'
+App name mismatch detected. The runner is configured with app name "EvaluationGenerator", but the root agent was loaded from "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/agents", which implies app name "agents".
+Inference failed for eval case `profit_wheat` with error Missing key inputs argument! To use the Google AI API, provide (`api_key`) arguments. To use the Google Cloud API, provide (`vertexai`, `project` & `location`) arguments..
+Traceback (most recent call last):
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py", line 407, in _perform_inference_single_eval_item
+    await EvaluationGenerator._generate_inferences_from_root_agent(
+    ...<7 lines>...
+    )
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/evaluation_generator.py", line 249, in _generate_inferences_from_root_agent
+    async for (
+    ...<4 lines>...
+      events.append(event)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/evaluation_generator.py", line 176, in _generate_inferences_for_single_user_invocation
+    async for event in agen:
+    ...<8 lines>...
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/runners.py", line 454, in run_async
+    async for event in agen:
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/runners.py", line 442, in _run_with_trace
+    async for event in agen:
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/runners.py", line 654, in _exec_with_plugin
+    async for event in agen:
+    ...<9 lines>...
+      yield (modified_event if modified_event else event)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/runners.py", line 431, in execute
+    async for event in agen:
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/agents/base_agent.py", line 291, in run_async
+    async for event in agen:
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/agents/llm_agent.py", line 460, in _run_async_impl
+    async for event in agen:
+    ...<5 lines>...
+        should_pause = True
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 346, in run_async
+    async for event in agen:
+      last_event = event
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 423, in _run_one_step_async
+    async for llm_response in agen:
+    ...<13 lines>...
+          yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 801, in _call_llm_async
+    async for event in agen:
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 785, in _call_llm_with_tracing
+    async for llm_response in agen:
+    ...<12 lines>...
+      yield llm_response
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 1038, in _run_and_handle_error
+    raise model_error
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 1024, in _run_and_handle_error
+    async for response in agen:
+      yield response
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 143, in generate_content_async
+    await self._preprocess_request(llm_request)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 354, in _preprocess_request
+    if self._api_backend == GoogleLLMVariant.GEMINI_API:
+       ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/functools.py", line 1039, in __get__
+    val = self.func(instance)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 257, in _api_backend
+    if self.api_client.vertexai
+       ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/functools.py", line 1039, in __get__
+    val = self.func(instance)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 246, in api_client
+    return Client(
+        http_options=types.HttpOptions(
+    ...<2 lines>...
+        )
+    )
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/client.py", line 271, in __init__
+    self._api_client = self._get_api_client(
+                       ~~~~~~~~~~~~~~~~~~~~^
+        vertexai=vertexai,
+        ^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        http_options=http_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/client.py", line 318, in _get_api_client
+    return BaseApiClient(
+        vertexai=vertexai,
+    ...<4 lines>...
+        http_options=http_options,
+    )
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/_api_client.py", line 683, in __init__
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: Missing key inputs argument! To use the Google AI API, provide (`api_key`) arguments. To use the Google Cloud API, provide (`vertexai`, `project` & `location`) arguments.
+App name mismatch detected. The runner is configured with app name "EvaluationGenerator", but the root agent was loaded from "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/agents", which implies app name "agents".
+Inference failed for eval case `roi_cotton` with error Missing key inputs argument! To use the Google AI API, provide (`api_key`) arguments. To use the Google Cloud API, provide (`vertexai`, `project` & `location`) arguments..
+Traceback (most recent call last):
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py", line 407, in _perform_inference_single_eval_item
+    await EvaluationGenerator._generate_inferences_from_root_agent(
+    ...<7 lines>...
+    )
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/evaluation_generator.py", line 249, in _generate_inferences_from_root_agent
+    async for (
+    ...<4 lines>...
+      events.append(event)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/evaluation_generator.py", line 176, in _generate_inferences_for_single_user_invocation
+    async for event in agen:
+    ...<8 lines>...
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/runners.py", line 454, in run_async
+    async for event in agen:
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/runners.py", line 442, in _run_with_trace
+    async for event in agen:
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/runners.py", line 654, in _exec_with_plugin
+    async for event in agen:
+    ...<9 lines>...
+      yield (modified_event if modified_event else event)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/runners.py", line 431, in execute
+    async for event in agen:
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/agents/base_agent.py", line 291, in run_async
+    async for event in agen:
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/agents/llm_agent.py", line 460, in _run_async_impl
+    async for event in agen:
+    ...<5 lines>...
+        should_pause = True
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 346, in run_async
+    async for event in agen:
+      last_event = event
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 423, in _run_one_step_async
+    async for llm_response in agen:
+    ...<13 lines>...
+          yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 801, in _call_llm_async
+    async for event in agen:
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 785, in _call_llm_with_tracing
+    async for llm_response in agen:
+    ...<12 lines>...
+      yield llm_response
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 1038, in _run_and_handle_error
+    raise model_error
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 1024, in _run_and_handle_error
+    async for response in agen:
+      yield response
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 143, in generate_content_async
+    await self._preprocess_request(llm_request)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 354, in _preprocess_request
+    if self._api_backend == GoogleLLMVariant.GEMINI_API:
+       ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/functools.py", line 1039, in __get__
+    val = self.func(instance)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 257, in _api_backend
+    if self.api_client.vertexai
+       ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/functools.py", line 1039, in __get__
+    val = self.func(instance)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 246, in api_client
+    return Client(
+        http_options=types.HttpOptions(
+    ...<2 lines>...
+        )
+    )
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/client.py", line 271, in __init__
+    self._api_client = self._get_api_client(
+                       ~~~~~~~~~~~~~~~~~~~~^
+        vertexai=vertexai,
+        ^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        http_options=http_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/client.py", line 318, in _get_api_client
+    return BaseApiClient(
+        vertexai=vertexai,
+    ...<4 lines>...
+        http_options=http_options,
+    )
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/_api_client.py", line 683, in __init__
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: Missing key inputs argument! To use the Google AI API, provide (`api_key`) arguments. To use the Google Cloud API, provide (`vertexai`, `project` & `location`) arguments.
+Task exception was never retrieved
+future: <Task finished name='Task-8' coro=<BaseApiClient.aclose() done, defined at /Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/_api_client.py:1902> exception=AttributeError("'BaseApiClient' object has no attribute '_async_httpx_client'")>
+Traceback (most recent call last):
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/_api_client.py", line 1907, in aclose
+    await self._async_httpx_client.aclose()
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'BaseApiClient' object has no attribute '_async_httpx_client'
+Task exception was never retrieved
+future: <Task finished name='Task-9' coro=<BaseApiClient.aclose() done, defined at /Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/_api_client.py:1902> exception=AttributeError("'BaseApiClient' object has no attribute '_async_httpx_client'")>
+Traceback (most recent call last):
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/_api_client.py", line 1907, in aclose
+    await self._async_httpx_client.aclose()
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'BaseApiClient' object has no attribute '_async_httpx_client'
+Traceback (most recent call last):
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/evals/run_evals.py", line 59, in run_suite
+    await AgentEvaluator.evaluate_eval_set(
+    ...<4 lines>...
+    )
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/agent_evaluator.py", line 158, in evaluate_eval_set
+    eval_results_by_eval_id = await AgentEvaluator._get_eval_results_by_eval_id(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/agent_evaluator.py", line 593, in _get_eval_results_by_eval_id
+    async for eval_result in agen:
+    ...<4 lines>...
+      eval_results_by_eval_id[eval_id].append(eval_result)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py", line 175, in evaluate
+    inference_result, eval_case_result = await evaluation_task
+                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/tasks.py", line 634, in _wait_for_one
+    return f.result() if resolve else f
+           ~~~~~~~~^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py", line 164, in run_evaluation
+    return await self._evaluate_single_inference_result(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py", line 227, in _evaluate_single_inference_result
+    if eval_case.conversation_scenario is None and len(
+                                                   ~~~^
+        inference_result.inferences
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) != len(eval_case.conversation):
+    ^
+TypeError: object of type 'NoneType' has no len()
+Running suite: market
+Starting evaluation for market_analyst_a2a...
+Evaluation failed: object of type 'NoneType' has no len()
+Task exception was never retrieved
+future: <Task finished name='Task-11' coro=<LocalEvalService.evaluate.<locals>.run_evaluation() done, defined at /Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py:162> exception=TypeError("object of type 'NoneType' has no len()")>
+Traceback (most recent call last):
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py", line 164, in run_evaluation
+    return await self._evaluate_single_inference_result(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py", line 227, in _evaluate_single_inference_result
+    if eval_case.conversation_scenario is None and len(
+                                                   ~~~^
+        inference_result.inferences
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) != len(eval_case.conversation):
+    ^
+TypeError: object of type 'NoneType' has no len()
+Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<LocalEvalService.evaluate.<locals>.run_evaluation() done, defined at /Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py:162> exception=TypeError("object of type 'NoneType' has no len()")>
+Traceback (most recent call last):
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py", line 164, in run_evaluation
+    return await self._evaluate_single_inference_result(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py", line 227, in _evaluate_single_inference_result
+    if eval_case.conversation_scenario is None and len(
+                                                   ~~~^
+        inference_result.inferences
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) != len(eval_case.conversation):
+    ^
+TypeError: object of type 'NoneType' has no len()
+Task exception was never retrieved
+future: <Task finished name='Task-13' coro=<LocalEvalService.evaluate.<locals>.run_evaluation() done, defined at /Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py:162> exception=TypeError("object of type 'NoneType' has no len()")>
+Traceback (most recent call last):
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py", line 164, in run_evaluation
+    return await self._evaluate_single_inference_result(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py", line 227, in _evaluate_single_inference_result
+    if eval_case.conversation_scenario is None and len(
+                                                   ~~~^
+        inference_result.inferences
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) != len(eval_case.conversation):
+    ^
+TypeError: object of type 'NoneType' has no len()

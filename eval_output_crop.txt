@@ -1,0 +1,297 @@
+/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/agent_evaluator.py:153: UserWarning: [EXPERIMENTAL] UserSimulatorProvider: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  user_simulator_provider = UserSimulatorProvider(
+/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/metric_evaluator_registry.py:90: UserWarning: [EXPERIMENTAL] MetricEvaluatorRegistry: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  metric_evaluator_registry = MetricEvaluatorRegistry()
+/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py:80: UserWarning: [EXPERIMENTAL] UserSimulatorProvider: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  user_simulator_provider: UserSimulatorProvider = UserSimulatorProvider(),
+/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/agent_evaluator.py:557: UserWarning: [EXPERIMENTAL] LocalEvalService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  eval_service = LocalEvalService(
+/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/user_simulator_provider.py:77: UserWarning: [EXPERIMENTAL] StaticUserSimulator: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  return StaticUserSimulator(static_conversation=eval_case.conversation)
+/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/static_user_simulator.py:39: UserWarning: [EXPERIMENTAL] UserSimulator: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__(
+App name mismatch detected. The runner is configured with app name "EvaluationGenerator", but the root agent was loaded from "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/agents", which implies app name "agents".
+Inference failed for eval case `cotton_vs_wheat` with error 404 NOT_FOUND. {'error': {'code': 404, 'message': 'Publisher Model `projects/agentscourse-477723/locations/us-east4/publishers/google/models/gemini-1.5-flash-001` was not found or your project does not have access to it. Please ensure you are using a valid model version. For more information, see: https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions', 'status': 'NOT_FOUND'}}.
+Traceback (most recent call last):
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py", line 407, in _perform_inference_single_eval_item
+    await EvaluationGenerator._generate_inferences_from_root_agent(
+    ...<7 lines>...
+    )
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/evaluation_generator.py", line 249, in _generate_inferences_from_root_agent
+    async for (
+    ...<4 lines>...
+      events.append(event)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/evaluation_generator.py", line 176, in _generate_inferences_for_single_user_invocation
+    async for event in agen:
+    ...<8 lines>...
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/runners.py", line 454, in run_async
+    async for event in agen:
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/runners.py", line 442, in _run_with_trace
+    async for event in agen:
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/runners.py", line 654, in _exec_with_plugin
+    async for event in agen:
+    ...<9 lines>...
+      yield (modified_event if modified_event else event)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/runners.py", line 431, in execute
+    async for event in agen:
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/agents/base_agent.py", line 291, in run_async
+    async for event in agen:
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/agents/llm_agent.py", line 460, in _run_async_impl
+    async for event in agen:
+    ...<5 lines>...
+        should_pause = True
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 346, in run_async
+    async for event in agen:
+      last_event = event
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 423, in _run_one_step_async
+    async for llm_response in agen:
+    ...<13 lines>...
+          yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 801, in _call_llm_async
+    async for event in agen:
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 785, in _call_llm_with_tracing
+    async for llm_response in agen:
+    ...<12 lines>...
+      yield llm_response
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 1038, in _run_and_handle_error
+    raise model_error
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 1024, in _run_and_handle_error
+    async for response in agen:
+      yield response
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 235, in generate_content_async
+    raise ce
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 214, in generate_content_async
+    response = await self.api_client.aio.models.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/models.py", line 7021, in generate_content
+    return await self._generate_content(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        model=model, contents=contents, config=parsed_config
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/models.py", line 5839, in _generate_content
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        'post', path, request_dict, http_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/_api_client.py", line 1434, in async_request
+    result = await self._async_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        http_request=http_request, http_options=http_options, stream=False
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/_api_client.py", line 1366, in _async_request
+    return await retry(self._async_request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 400, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+                                     ~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/_api_client.py", line 1312, in _async_request_once
+    await errors.APIError.raise_for_async_response(response)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/errors.py", line 188, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/errors.py", line 210, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'Publisher Model `projects/agentscourse-477723/locations/us-east4/publishers/google/models/gemini-1.5-flash-001` was not found or your project does not have access to it. Please ensure you are using a valid model version. For more information, see: https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions', 'status': 'NOT_FOUND'}}
+/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/user_simulator_provider.py:77: UserWarning: [EXPERIMENTAL] StaticUserSimulator: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  return StaticUserSimulator(static_conversation=eval_case.conversation)
+/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/static_user_simulator.py:39: UserWarning: [EXPERIMENTAL] UserSimulator: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__(
+App name mismatch detected. The runner is configured with app name "EvaluationGenerator", but the root agent was loaded from "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/agents", which implies app name "agents".
+Inference failed for eval case `cotton_vs_wheat` with error 404 NOT_FOUND. {'error': {'code': 404, 'message': 'Publisher Model `projects/agentscourse-477723/locations/us-east4/publishers/google/models/gemini-1.5-flash-001` was not found or your project does not have access to it. Please ensure you are using a valid model version. For more information, see: https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions', 'status': 'NOT_FOUND'}}.
+Traceback (most recent call last):
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py", line 407, in _perform_inference_single_eval_item
+    await EvaluationGenerator._generate_inferences_from_root_agent(
+    ...<7 lines>...
+    )
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/evaluation_generator.py", line 249, in _generate_inferences_from_root_agent
+    async for (
+    ...<4 lines>...
+      events.append(event)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/evaluation_generator.py", line 176, in _generate_inferences_for_single_user_invocation
+    async for event in agen:
+    ...<8 lines>...
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/runners.py", line 454, in run_async
+    async for event in agen:
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/runners.py", line 442, in _run_with_trace
+    async for event in agen:
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/runners.py", line 654, in _exec_with_plugin
+    async for event in agen:
+    ...<9 lines>...
+      yield (modified_event if modified_event else event)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/runners.py", line 431, in execute
+    async for event in agen:
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/agents/base_agent.py", line 291, in run_async
+    async for event in agen:
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/agents/llm_agent.py", line 460, in _run_async_impl
+    async for event in agen:
+    ...<5 lines>...
+        should_pause = True
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 346, in run_async
+    async for event in agen:
+      last_event = event
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 423, in _run_one_step_async
+    async for llm_response in agen:
+    ...<13 lines>...
+          yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 801, in _call_llm_async
+    async for event in agen:
+      yield event
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 785, in _call_llm_with_tracing
+    async for llm_response in agen:
+    ...<12 lines>...
+      yield llm_response
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 1038, in _run_and_handle_error
+    raise model_error
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/flows/llm_flows/base_llm_flow.py", line 1024, in _run_and_handle_error
+    async for response in agen:
+      yield response
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 235, in generate_content_async
+    raise ce
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/models/google_llm.py", line 214, in generate_content_async
+    response = await self.api_client.aio.models.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/models.py", line 7021, in generate_content
+    return await self._generate_content(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        model=model, contents=contents, config=parsed_config
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/models.py", line 5839, in _generate_content
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        'post', path, request_dict, http_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/_api_client.py", line 1434, in async_request
+    result = await self._async_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        http_request=http_request, http_options=http_options, stream=False
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/_api_client.py", line 1366, in _async_request
+    return await retry(self._async_request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 400, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+                                     ~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/_api_client.py", line 1312, in _async_request_once
+    await errors.APIError.raise_for_async_response(response)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/errors.py", line 188, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/genai/errors.py", line 210, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'Publisher Model `projects/agentscourse-477723/locations/us-east4/publishers/google/models/gemini-1.5-flash-001` was not found or your project does not have access to it. Please ensure you are using a valid model version. For more information, see: https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions', 'status': 'NOT_FOUND'}}
+Traceback (most recent call last):
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/evals/run_evals.py", line 63, in run_suite
+    await AgentEvaluator.evaluate_eval_set(
+    ...<5 lines>...
+    )
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/agent_evaluator.py", line 158, in evaluate_eval_set
+    eval_results_by_eval_id = await AgentEvaluator._get_eval_results_by_eval_id(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/agent_evaluator.py", line 593, in _get_eval_results_by_eval_id
+    async for eval_result in agen:
+    ...<4 lines>...
+      eval_results_by_eval_id[eval_id].append(eval_result)
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py", line 175, in evaluate
+    inference_result, eval_case_result = await evaluation_task
+                                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/tasks.py", line 634, in _wait_for_one
+    return f.result() if resolve else f
+           ~~~~~~~~^^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py", line 164, in run_evaluation
+    return await self._evaluate_single_inference_result(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py", line 227, in _evaluate_single_inference_result
+    if eval_case.conversation_scenario is None and len(
+                                                   ~~~^
+        inference_result.inferences
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) != len(eval_case.conversation):
+    ^
+TypeError: object of type 'NoneType' has no len()
+Running suite: crop_advisor
+Starting evaluation for crop_investment_advisor...
+Evaluation failed: object of type 'NoneType' has no len()
+Task exception was never retrieved
+future: <Task finished name='Task-11' coro=<LocalEvalService.evaluate.<locals>.run_evaluation() done, defined at /Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py:162> exception=TypeError("object of type 'NoneType' has no len()")>
+Traceback (most recent call last):
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py", line 164, in run_evaluation
+    return await self._evaluate_single_inference_result(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/Users/felixdevasia/projects/hackathons/google/FarmFlow/.venv/lib/python3.13/site-packages/google/adk/evaluation/local_eval_service.py", line 227, in _evaluate_single_inference_result
+    if eval_case.conversation_scenario is None and len(
+                                                   ~~~^
+        inference_result.inferences
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) != len(eval_case.conversation):
+    ^
+TypeError: object of type 'NoneType' has no len()

@@ -1,0 +1,18 @@
+# Google AI and ADK
+google-genai>=1.52.0
+google-adk>=1.19.0
+google-cloud-aiplatform>=1.80.0
+
+# Telegram Bot (Primary User Interface)
+python-telegram-bot[job-queue,webhooks]>=21.0
+
+# Web Framework (Admin Dashboard)
+python-fasthtml>=0.12.35
+uvicorn>=0.38.0
+starlette>=0.48.0
+
+# Environment Management
+python-dotenv>=1.2.1
+
+google-cloud-firestore
+gunicorn

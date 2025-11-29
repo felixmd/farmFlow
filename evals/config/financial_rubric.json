@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "rubric_based_final_response_quality_v1": {
+            "threshold": 0.8,
+            "rubrics": [
+                {
+                    "rubric_id": "financial_analysis",
+                    "rubric_content": {
+                        "text_property": "The response must include quantitative financial analysis such as ROI, profit margins, cost estimates, or market trends."
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.git
+.gitignore
+.venv
+__pycache__
+*.pyc
+.env
+.DS_Store
+eval_output.txt
+eval_output_crop.txt
+eval_output_metric.txt
+emergency_vet_bot.log
+telegram_bot.log
+emergency_cases.json
+emergency_cases.json.backup

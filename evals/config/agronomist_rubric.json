@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "rubric_based_final_response_quality_v1": {
+            "threshold": 0.8,
+            "rubrics": [
+                {
+                    "rubric_id": "agronomic_details",
+                    "rubric_content": {
+                        "text_property": "The response must include specific agronomic details such as soil requirements, water needs, planting season, or pest management."
+                    }
+                }
+            ]
+        }
+    }
+}

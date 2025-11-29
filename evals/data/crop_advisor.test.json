@@ -1,0 +1,31 @@
+{
+    "eval_set_id": "crop_advisor_eval",
+    "name": "Crop Advisor A2A Evaluation",
+    "eval_cases": [
+        {
+            "eval_id": "cotton_vs_wheat",
+            "conversation": [
+                {
+                    "user_content": {
+                        "role": "user",
+                        "parts": [
+                            {
+                                "text": "Should I plant cotton or wheat?"
+                            }
+                        ]
+                    },
+                    "intermediate_data": {
+                        "tool_uses": [
+                            {
+                                "name": "market_analyst_a2a"
+                            },
+                            {
+                                "name": "agronomist_a2a"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

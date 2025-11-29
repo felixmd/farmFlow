@@ -1,0 +1,36 @@
+{
+    "eval_set_id": "market_analyst_eval",
+    "name": "Market Analyst Evaluation",
+    "eval_cases": [
+        {
+            "eval_id": "roi_cotton",
+            "conversation": [
+                {
+                    "user_content": {
+                        "role": "user",
+                        "parts": [
+                            {
+                                "text": "What is the ROI for cotton?"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "eval_id": "profit_wheat",
+            "conversation": [
+                {
+                    "user_content": {
+                        "role": "user",
+                        "parts": [
+                            {
+                                "text": "Calculate the expected profit for wheat."
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}
