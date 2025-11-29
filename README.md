@@ -156,9 +156,14 @@ We used `google-adk` to rigorously evaluate our agents before deployment.
 2.  Install dependencies: `pip install -r requirements.txt`
 3.  Set environment variables in `.env`:
     ```bash
-    TELEGRAM_TOKEN=your_token
+    TELEGRAM_TOKEN=your_main_bot_token
+    TELEGRAM_TOKEN_EMERGENCY_BOT=your_emergency_bot_token
     GOOGLE_API_KEY=your_gemini_key
     GOOGLE_CLOUD_PROJECT=your_project
+    GOOGLE_CLOUD_LOCATION=us-central1
+    VET_GROUP_CHAT_ID=-100xxxxxxxxx  # Group ID for vet alerts
+    GOOGLE_GENAI_USE_VERTEXAI=true
+    AGENT_ENGINE_ID=your_agent_engine_id
     ```
 4.  Run the bot: `python telegram_bot.py`
 
@@ -168,5 +173,8 @@ We used `google-adk` to rigorously evaluate our agents before deployment.
     ```bash
     gcloud run deploy farmflow \
       --image gcr.io/PROJECT_ID/farmflow \
-      --set-env-vars "MODE=WEBHOOK,WEBHOOK_URL=https://your-service-url"
+      --set-env-vars "MODE=WEBHOOK,WEBHOOK_URL=https://your-service-url" \
+      --set-env-vars "TELEGRAM_TOKEN=...,TELEGRAM_TOKEN_EMERGENCY_BOT=..." \
+      --set-env-vars "GOOGLE_API_KEY=...,GOOGLE_CLOUD_PROJECT=..." \
+      --set-env-vars "VET_GROUP_CHAT_ID=...,GOOGLE_GENAI_USE_VERTEXAI=true"
     ```
